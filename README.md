@@ -129,9 +129,12 @@ The chatbot maintains context through:
 # 6. Performance Metrics
 Based on testing, the chatbot demonstrates:
 
-# Response Accuracy: 92.59% success rate in providing contextually appropriate responses
-# Context Retention: Successfully maintains age information throughout conversations
-# Response Time: Average response time of 2.1 seconds
+# Response Accuracy: 
+92.59% success rate in providing contextually appropriate responses
+# Context Retention: 
+Successfully maintains age information throughout conversations
+# Response Time: 
+Average response time of 2.1 seconds
 
 # 7. Use Cases
 
