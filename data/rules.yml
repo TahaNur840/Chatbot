@@ -1,0 +1,90 @@
+# version: "3.1"
+
+# rules:
+#   - rule: Greet user
+#     steps:
+#       - intent: greet
+#       - action: utter_greet
+#       - action: action_ask_age
+
+#   - rule: Say goodbye anytime
+#     steps:
+#       - intent: goodbye
+#       - action: utter_goodbye
+
+#   - rule: Thank user response
+#     steps:
+#       - intent: thank
+#       - action: utter_youre_welcome
+
+#   - rule: Provide age info
+#     steps:
+#       - intent: inform_age
+#       - action: action_provide_age
+#       - action: utter_age_confirmation
+
+#   - rule: Recommend activities after age confirmation
+#     steps:
+#       - intent: affirm
+#       - action: action_recommend_activity
+
+#   - rule: Handle health query
+#     steps:
+#       - intent: ask_health_info
+#       - action: action_handle_health_query
+
+
+
+
+# ===============================
+
+
+version: "3.1"
+
+rules:
+  - rule: Greet user
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - action: action_ask_age
+
+  - rule: Say goodbye anytime
+    steps:
+      - intent: goodbye
+      - action: utter_goodbye
+
+  - rule: Thank user response
+    steps:
+      - intent: thank
+      - action: utter_youre_welcome
+
+  - rule: Provide age info
+    steps:
+      - intent: inform_age
+      - action: action_provide_age
+      - action: utter_age_confirmation
+
+  - rule: Recommend activities after age confirmation
+    steps:
+      - intent: affirm
+      - action: action_recommend_activity
+
+  - rule: Handle health query
+    steps:
+      - intent: ask_health_info
+      - action: action_handle_health_query
+      
+  # New rule for direct recommendation requests when age is known
+  - rule: Handle recommendation request when age is known
+    condition:
+    - slot_was_set:
+      - age: any  # This rule only applies when the age slot is filled
+    steps:
+      - intent: ask_recommendation
+      - action: action_recommend_activity
+      
+  # New rule for debugging
+  - rule: Debug every message
+    steps:
+      - intent: nlu_fallback
+      - action: action_debug

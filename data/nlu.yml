@@ -1,0 +1,252 @@
+# version: "3.1"
+
+# nlu:
+#   - intent: greet
+#     examples: |
+#       - Hey
+#       - Good morning
+#       - Good evening
+#       - Hello
+#       - Hi there
+#       - Hello there
+#       - Howdy
+#       - Greetings
+#       - Hi bot
+#       - Hey bot
+
+#   - intent: goodbye
+#     examples: |
+#       - Bye
+#       - Goodbye
+#       - See you
+#       - Take care
+#       - See you later
+#       - Good night
+#       - Have a nice day
+#       - I'm leaving now
+#       - Talk to you later
+#       - Until next time
+
+#   - intent: inform_age
+#     examples: |
+#       - I am 25 years old
+#       - My age is 30
+#       - I am 22
+#       - I'm 45 years old
+#       - I'm [18](age)
+#       - I am [65](age) years old
+#       - [42](age)
+#       - [29](age) years
+#       - I was born [33](age) years ago
+#       - My age is [51](age)
+
+#   - intent: ask_activities
+#     examples: |
+#       - What activities do you recommend?
+#       - What should I do?
+#       - Recommend some activities
+#       - What's good for someone my age?
+#       - Any activity suggestions?
+#       - What can I do for fun?
+#       - Give me some activity ideas
+#       - What do people my age usually do?
+#       - I'm bored, what should I do?
+#       - Activity recommendations please
+
+#   - intent: ask_health_info
+#     examples: |
+#       - What health advice do you have?
+#       - Health tips for my age
+#       - What should I know about health?
+#       - Any health recommendations?
+#       - What medical checkups should I get?
+#       - Health concerns for my age group
+#       - Tell me about health for someone my age
+#       - What should I be aware of health-wise?
+#       - Health guidance please
+#       - Medical advice for my age bracket
+
+#   - intent: affirm
+#     examples: |
+#       - Yes
+#       - Sure
+#       - Absolutely
+#       - Of course
+#       - That's right
+#       - Correct
+#       - Yep
+#       - Yeah
+#       - Indeed
+#       - That sounds good
+
+#   - intent: deny
+#     examples: |
+#       - No
+#       - Never
+#       - I don't think so
+#       - No way
+#       - Not really
+#       - Nope
+#       - Incorrect
+#       - That's wrong
+#       - No thanks
+#       - I disagree
+
+#   - intent: thank
+#     examples: |
+#       - Thanks
+#       - Thank you
+#       - Thanks a lot
+#       - I appreciate it
+#       - Thank you so much
+#       - Thanks for the help
+#       - That was helpful, thanks
+#       - I'm grateful
+#       - Much appreciated
+#       - Thanks for your assistance
+
+
+
+
+
+# =======================
+
+version: "3.1"
+
+nlu:
+  - intent: greet
+    examples: |
+      - Hey
+      - Good morning
+      - Good evening
+      - Hello
+      - Hi there
+      - Hello there
+      - Howdy
+      - Greetings
+      - Hi bot
+      - Hey bot
+
+  - intent: goodbye
+    examples: |
+      - Bye
+      - Goodbye
+      - See you
+      - Take care
+      - See you later
+      - Good night
+      - Have a nice day
+      - I'm leaving now
+      - Talk to you later
+      - Until next time
+
+  - intent: inform_age
+    examples: |
+      - I am 25 years old
+      - My age is 30
+      - I am 22
+      - I'm 45 years old
+      - I'm [18](age)
+      - I am [65](age) years old
+      - [42](age)
+      - [29](age) years
+      - I was born [33](age) years ago
+      - My age is [51](age)
+
+  - intent: ask_activities
+    examples: |
+      - What activities do you recommend?
+      - What should I do?
+      - Recommend some activities
+      - What's good for someone my age?
+      - Any activity suggestions?
+      - What can I do for fun?
+      - Give me some activity ideas
+      - What do people my age usually do?
+      - I'm bored, what should I do?
+      - Activity recommendations please
+
+  - intent: ask_health_info
+    examples: |
+      - What health advice do you have?
+      - Health tips for my age
+      - What should I know about health?
+      - Any health recommendations?
+      - What medical checkups should I get?
+      - Health concerns for my age group
+      - Tell me about health for someone my age
+      - What should I be aware of health-wise?
+      - Health guidance please
+      - Medical advice for my age bracket
+
+  - intent: affirm
+    examples: |
+      - Yes
+      - Sure
+      - Absolutely
+      - Of course
+      - That's right
+      - Correct
+      - Yep
+      - Yeah
+      - Indeed
+      - That sounds good
+
+  - intent: deny
+    examples: |
+      - No
+      - Never
+      - I don't think so
+      - No way
+      - Not really
+      - Nope
+      - Incorrect
+      - That's wrong
+      - No thanks
+      - I disagree
+
+  - intent: thank
+    examples: |
+      - Thanks
+      - Thank you
+      - Thanks a lot
+      - I appreciate it
+      - Thank you so much
+      - Thanks for the help
+      - That was helpful, thanks
+      - I'm grateful
+      - Much appreciated
+      - Thanks for your assistance
+
+  - intent: ask_recommendation
+    examples: |
+      - What do you recommend?
+      - Give me recommendations
+      - What should I try?
+      - Recommend something for me
+      - What activities are good for me?
+      - What do you suggest?
+      - Can you recommend something?
+      - I need recommendations
+      - Show me recommendations
+      - Suggest something for me
+      - What's good for someone my age?
+      - Any recommendations?
+      - What would be suitable for me?
+      - I want some suggestions
+      - Tell me what I should do
+      - Provide me with some recommendations
+      - What would you recommend for someone like me?
+      - Give me personalized suggestions
+      - I'd like to know what you recommend
+      - What are your top recommendations?
+
+  - intent: nlu_fallback
+    examples: |
+      - xyz123
+      - qwerty
+      - asdfghjkl
+      - random text for fallback
+      - this is a test message
+      - something completely unrelated
+      - blah blah blah

@@ -1,0 +1,148 @@
+# version: "3.1"
+
+# stories:
+#   - story: user greets, provides age, and gets activity recommendations
+#     steps:
+#       - intent: greet
+#       - action: utter_greet
+#       - action: action_ask_age
+#       - intent: inform_age
+#       - action: action_provide_age
+#       - action: utter_age_confirmation
+#       - intent: affirm
+#       - action: action_recommend_activity
+#       - intent: thank
+#       - action: utter_youre_welcome
+#       - intent: goodbye
+#       - action: utter_goodbye
+
+#   - story: user greets, provides age, and asks for health info
+#     steps:
+#       - intent: greet
+#       - action: utter_greet
+#       - action: action_ask_age
+#       - intent: inform_age
+#       - action: action_provide_age
+#       - action: utter_age_confirmation
+#       - intent: ask_health_info
+#       - action: action_handle_health_query
+#       - intent: thank
+#       - action: utter_youre_welcome
+
+#   - story: user greets but doesn't provide age
+#     steps:
+#       - intent: greet
+#       - action: utter_greet
+#       - action: action_ask_age
+#       - intent: deny
+#       - action: utter_no_problem
+#       - action: utter_goodbye
+
+#   - story: user directly asks for activities
+#     steps:
+#       - intent: ask_activities
+#       - action: action_ask_age
+#       - intent: inform_age
+#       - action: action_provide_age
+#       - action: utter_age_confirmation
+#       - intent: affirm
+#       - action: action_recommend_activity
+
+#   - story: user provides incorrect age and corrects it
+#     steps:
+#       - intent: greet
+#       - action: utter_greet
+#       - action: action_ask_age
+#       - intent: inform_age
+#       - action: action_provide_age
+#       - action: utter_age_confirmation
+#       - intent: deny
+#       - action: utter_ask_correct_age
+#       - intent: inform_age
+#       - action: action_provide_age
+#       - action: utter_age_confirmation
+#       - intent: affirm
+#       - action: action_recommend_activity
+
+
+
+# =====================================================
+
+
+version: "3.1"
+
+stories:
+  - story: user greets, provides age, and gets activity recommendations
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - action: action_ask_age
+      - intent: inform_age
+      - action: action_provide_age
+      - action: utter_age_confirmation
+      - intent: affirm
+      - action: action_recommend_activity
+      - intent: thank
+      - action: utter_youre_welcome
+      - intent: goodbye
+      - action: utter_goodbye
+
+  - story: user greets, provides age, and asks for health info
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - action: action_ask_age
+      - intent: inform_age
+      - action: action_provide_age
+      - action: utter_age_confirmation
+      - intent: ask_health_info
+      - action: action_handle_health_query
+      - intent: thank
+      - action: utter_youre_welcome
+
+  - story: user greets but doesn't provide age
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - action: action_ask_age
+      - intent: deny
+      - action: utter_no_problem
+      - action: utter_goodbye
+
+  - story: user directly asks for activities
+    steps:
+      - intent: ask_activities
+      - action: action_ask_age
+      - intent: inform_age
+      - action: action_provide_age
+      - action: utter_age_confirmation
+      - intent: affirm
+      - action: action_recommend_activity
+
+  - story: user provides incorrect age and corrects it
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - action: action_ask_age
+      - intent: inform_age
+      - action: action_provide_age
+      - action: utter_age_confirmation
+      - intent: deny
+      - action: utter_ask_correct_age
+      - intent: inform_age
+      - action: action_provide_age
+      - action: utter_age_confirmation
+      - intent: affirm
+      - action: action_recommend_activity
+      
+  # New story for recommendation flow
+  - story: user provides age and then asks for recommendations
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - action: action_ask_age
+      - intent: inform_age
+      - action: action_provide_age
+      - action: utter_age_confirmation
+      - intent: ask_recommendation
+      - action: action_recommend_activity
